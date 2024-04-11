@@ -1,0 +1,93 @@
+body {
+  background-color: darkslategrey;
+}
+
+h1 {
+  background-color: lightslategray;
+}
+
+ul {
+  min-height: 10rem;
+  max-height: 15rem;
+  overflow-y: scroll;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(45, 68, 68);
+  border: 2px solid rgb(1, 31, 17);
+}
+
+.delete-btn>.delete-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.delete-btn:active {
+  color: red;
+}
+
+.delete-btn:hover {
+  color: red;
+}
+
+.edit-btn>.edit-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.edit-btn:active {
+  color: rgb(2, 73, 2);
+}
+
+.edit-btn:hover {
+  color: green;
+}
+
+.info {
+  display: none;
+}
+
+.input-name {
+  display: flex;
+  justify-content: right;
+}
+
+input {
+  outline: none;
+  position: relative;
+  left: 3px;
+}
+
+.correct {
+  outline: 2px solid green;
+}
+
+.incorrect {
+  outline: 2px solid red;
+}
+
+.show-info {
+  display: block;
+}
+
+li>p {
+  border: rgb(29, 65, 94) solid 2px;
+  background-color: white;
+  white-space: nowrap;
+}
+
+.p2 {
+  border: rgb(7, 207, 181) 2px solid;
+  background-color: rgb(24, 47, 48);
+  color: white;
+}
+
+@media (max-width:320px) {
+  li>p{
+    white-space: normal;
+  }
+}
